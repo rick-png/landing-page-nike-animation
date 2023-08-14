@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+header {
+  width: 100w;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  margin-top: 20px;
+  background-color: #fcfcfc;
+  font-family: 'Inter';
+  position: relative;
+}
+header>nav {
+  position: absolute;
+  right: calc((-545px / 2) + (50%));
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+header>nav>ul {
+  display: flex;
+  gap: 20px;
+}
+header>nav>ul>li>a {
+  font-size: 24px;
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+}
+header>nav>ul>li>a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #111;
+  transition: 0.2s;
+}
+header>nav>ul>li>a:hover::after {
+  width: 100%;
+}
+
+.container-icons-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.container-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.container-search > figure {
+  width: 55px;
+  height: 55px;
+  left: 0;
+  border-radius: 50px 0px 0px 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.container-search > figure > img {
+  width: 30px;
+}
+.container-search>input {
+  width: 210px;
+  height: 55px;
+  border-radius: 0px 50px 50px 0px;
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  
+  font-size: 22px;
+  font-weight: 600;
+}
+.container-search>input::placeholder {
+  color: #cacaca;
+}
+.favorites>img, .card>img {
+  width: 30px;
+}
+
+
+
+main {
+  display: flex;
+}
+.frame-1 {
+  display: flex;
+}
+.before-frame-1 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  z-index: 999;
+  top: 0;
+}
+.before-frame-1>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.container-frame-1-banner>div{
+  display: flex;
+  position: relative;
+}
+.banner-after {
+  width: 822px;
+  height: 536px;
+  left: calc((-822px / 2) + 50%);
+  top: 30%;
+  position: absolute;
+  outline: 30px solid #000;
+  border-radius: 1px;
+}
+.banner-after>img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ filter: brightness(32%);
+}
+.nike-before-container {
+  position: absolute;
+  top: calc((-132px / 2) + 50%);
+  left: calc((-336px / 2) + 50%);
+  transition: 0.2s;
+}
